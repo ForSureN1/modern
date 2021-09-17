@@ -180,6 +180,12 @@ body {
 	padding: 10px;
 	border-radius: 2px;
 	cursor: pointer;
+	border: none;
+}
+.main__form-input:active,
+.main__form-input:focus  {
+	border: none;
+	outline: none;
 }
 .form__items input,
 .form__text {
