@@ -90,13 +90,13 @@ body {
 	text-transform: uppercase;
 }
 
-.line-hover {
+.phone-hover {
 	position: relative;
 }
-.line-hover:hover::after {
+.phone-hover:hover::after {
 	width: 100%;
 }
-.line-hover::before {
+.phone-hover::before {
 	position: absolute;
 	content: "";
 	width: 22px;
@@ -108,7 +108,7 @@ body {
 	background-size: 22px;
 }
 
-.line-hover::after {
+.phone-hover::after {
 	position: absolute;
 	content: "";
 	bottom: 0;
