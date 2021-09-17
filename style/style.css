@@ -73,10 +73,7 @@ body {
 
 
 /*header*/
-/*.header {
-	position: absolute;
-	width: 100%;
-}*/
+
 .header__container {
 	padding: 20px 0;
 }
@@ -93,13 +90,13 @@ body {
 	text-transform: uppercase;
 }
 
-.header__phone {
+.header__phone-hover {
 	position: relative;
 }
-.header__phone:hover::after {
+.header__phone-hover:hover::after {
 	width: 100%;
 }
-.header__phone::before {
+.header__phone-hover::before {
 	position: absolute;
 	content: "";
 	width: 22px;
@@ -111,7 +108,7 @@ body {
 	background-size: 22px;
 }
 
-.header__phone::after {
+.header__phone-hover::after {
 	position: absolute;
 	content: "";
 	bottom: 0;
@@ -139,16 +136,21 @@ body {
 .modern__information {
 	border-left: 13px solid #AF3433;
 	padding-left: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .modern__maintext {
 	font-size: 64px;
 	font-weight: 700;
-	line-height: 120%;
+	line-height: 140%;
 	letter-spacing: 0em;
 	text-transform: uppercase;
+	text-align: left;
 }
 .modern__text {
 	font-size: 24px;
+	text-align: left;
 }
 .modern__form {
 	background: rgba(92, 92, 92, 0.22);
@@ -158,9 +160,41 @@ body {
 	padding: 50px;
 	text-align: center;
 }
+.form__text {
+	font-family: Proxima Nova;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+	letter-spacing: 0em;
+}
+.form__text .active {
+	font-weight: 700;
+}
 .form__items {
 	display: flex;
 	flex-direction: column;
+}
+.form__items input {
+	font-size: 18px;
+	padding: 10px;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.form__items input,
+.form__text {
+	margin-bottom: 30px;
+}
+.form__items input:last-child {
+	margin-bottom: 0;
+	border-radius: none;
+}
+.main__form-submit {
+	background: #AF3433;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+	border: none;
 }
 /*modern section*/
 
@@ -182,3 +216,36 @@ body {
 	margin-left: 90px;
 }
 /*footer*/
+
+
+/*MEDIA*/
+
+@media(max-width: 1560px) {
+	.modern__maintext {
+		font-size: 60px
+	}
+	.modern__text {
+		font-size: 22px
+	}
+	.modern__information, .modern__form {
+		width: 40%;
+	}
+	.form__block {
+		padding: 40px;
+	}
+}
+
+@media(max-width: 1360px) {
+	.modern__maintext {
+		font-size: 55px;
+	}
+	.modern__text {
+		font-size: 22px
+	}
+	.modern__information, .modern__form {
+		width: 40%;
+	}
+	.form__block {
+		padding: 40px;
+	}
+}
