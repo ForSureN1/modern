@@ -55,7 +55,6 @@ body {
 	background: url(../images/background.jpg) 50% 50%;
 	background-size: cover;
 	position: relative;
-	z-index: -2;
 }
 .wrapper::before {
 	content: '';
@@ -65,7 +64,6 @@ body {
 	right: 0;
 	bottom: 0;
 	background: rgba(22,22,22, 0.68);
-	z-index: -1;
 }
 .wrapper > * {
 	position: relative;
