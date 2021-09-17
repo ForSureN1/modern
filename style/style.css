@@ -299,4 +299,25 @@ body {
 	.footer__item:last-child {
 		margin-top: 20px;
 	}
+	.modern__maintext {
+		font-size: 32px
+	}
+}
+
+@media(max-width: 500px) {
+	.footer__item.item-flex {
+		flex-direction: column;
+		text-align: center;
+	}
+	.item-phone {
+		margin: 0;
+		margin-top: 20px;
+	}
+	.modern__information {
+		padding-left: 10px;
+	}
+	.modern__information, .modern__form {
+		width: 90%;
+	}
+
 }
