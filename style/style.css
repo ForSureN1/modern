@@ -1,0 +1,186 @@
+body {
+	font-family: 'Proxima Nova';
+	font-size: 18px;
+	font-style: normal;
+	font-weight: normal;
+	color: #fff;
+}
+@media(max-width: 1920px) {
+	.container {
+		width: 1460px;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 1560px) {
+	.container {
+		width: 1360px;
+	}
+}
+
+@media (max-width: 1460px) {
+	.container {
+		width: 1260px;
+	}
+}
+
+@media (max-width: 1360px) {
+	.container {
+		width: 1060px;
+	}
+}
+
+@media (max-width: 1260px) {
+	.container {
+		width: 992px;
+	}
+}
+
+
+@media (max-width: 992px) {
+	.container {
+		width: 100%;
+	}
+}
+
+
+/*background image*/
+
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: url(../images/background.jpg) 50% 50%;
+	background-size: cover;
+	position: relative;
+	z-index: -2;
+}
+.wrapper::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(22,22,22, 0.68);
+	z-index: -1;
+}
+.wrapper > * {
+	position: relative;
+}
+
+/*background image*/
+
+
+/*header*/
+/*.header {
+	position: absolute;
+	width: 100%;
+}*/
+.header__container {
+	padding: 20px 0;
+}
+
+.header__elements {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logotype {
+	font-size: 53px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.header__phone {
+	position: relative;
+}
+.header__phone:hover::after {
+	width: 100%;
+}
+.header__phone::before {
+	position: absolute;
+	content: "";
+	width: 22px;
+	height: 22px;
+	top: 0;
+	left: -20%;
+	background-image: url('../images/phone.svg');
+	background-repeat: no-repeat;
+	background-size: 22px;
+}
+
+.header__phone::after {
+	position: absolute;
+	content: "";
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 1px;
+	background-color: #fff;
+	transition: .5s;
+}
+
+/*header*/
+
+/*modern section*/
+.main {
+	margin: auto 0;
+}
+.modern__items {
+	display: flex;
+	justify-content: space-between;
+}
+.modern__information,
+.modern__form {
+	width: 35%;
+}
+.modern__information {
+	border-left: 13px solid #AF3433;
+	padding-left: 30px;
+}
+.modern__maintext {
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 120%;
+	letter-spacing: 0em;
+	text-transform: uppercase;
+}
+.modern__text {
+	font-size: 24px;
+}
+.modern__form {
+	background: rgba(92, 92, 92, 0.22);
+	border-radius: 5px;
+}
+.form__block {
+	padding: 50px;
+	text-align: center;
+}
+.form__items {
+	display: flex;
+	flex-direction: column;
+}
+/*modern section*/
+
+
+/*footer*/
+
+.footer__container {
+	padding: 50px 0;
+}
+
+.footer__items {
+	display: flex;
+	justify-content: space-between;
+}
+.footer__item.item-flex {
+	display: flex;
+}
+.item-phone {
+	margin-left: 90px;
+}
+/*footer*/
