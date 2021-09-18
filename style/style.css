@@ -51,7 +51,6 @@ body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	background: url(../images/background.jpg) 50% 50%;
 	background-size: cover;
 	position: relative;
@@ -213,7 +212,6 @@ body {
 
 /*about company*/
 .company__background {
-	margin-top: 200px;
 	background-color: #fff;
 }
 .company__container {
@@ -226,12 +224,60 @@ body {
 .company__item {
 	width: 49%;
 }
-
+.company__items {
+	color: #333333;
+}
+.company__item-title {
+	text-transform: uppercase;
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 150%;
+	letter-spacing: 0em;
+}
+.company__item-text {
+	line-height: 180%;
+	letter-spacing: 0em;
+}
+.company__item-title.big {
+	text-transform: uppercase;
+	font-size: 352px;
+	font-weight: 700;
+	line-height: 70%;
+	letter-spacing: 0em;
+}
+.company__item-text span {
+	font-size: 19px;
+	font-weight: 700;
+	line-height: 80%;
+	letter-spacing: 0em;
+	color: #AF3433;
+	text-transform: uppercase;
+}
 /*about company*/
 
 
 /*footer*/
-
+.footer__background {
+	background: url(../images/background-footer.jpg) 50% 50%;
+	background-size: cover;
+	position: relative;
+}
+.footer__background::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(22, 22, 22, 0.83);
+}
+.footer__top,
+.footer__bot {
+	position: relative;
+}
+.footer__bot {
+	border-top: 1px solid #fff;
+}
 .footer__container {
 	padding: 50px 0;
 }
@@ -245,6 +291,17 @@ body {
 }
 .item-phone {
 	margin-left: 90px;
+}
+.footer__table {
+	text-align: left;
+	width: 100%;
+}
+.footer__top-title {
+	margin-bottom: 40px;
+}
+.footer__top-text {
+	margin-left: 100px;
+	font-weight: 700;
 }
 /*footer*/
 
