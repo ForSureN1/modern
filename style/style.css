@@ -211,6 +211,19 @@ body {
 /*modern section*/
 
 
+/*about company*/
+
+.company__items {
+	display: flex;
+	justify-content: space-between;
+}
+.company__item {
+	width: 49%;
+}
+
+/*about company*/
+
+
 /*footer*/
 
 .footer__container {
