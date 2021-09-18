@@ -212,7 +212,13 @@ body {
 
 
 /*about company*/
-
+.company__background {
+	margin-top: 200px;
+	background-color: #fff;
+}
+.company__container {
+	padding: 70px 0;
+}
 .company__items {
 	display: flex;
 	justify-content: space-between;
