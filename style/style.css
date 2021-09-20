@@ -632,6 +632,101 @@ body {
 	flex: 1 1;
 }
 
+.path__container {
+	margin: 50px 0;
+}
+.path__items {
+	display: flex;
+	justify-content: flex-start;
+}
+.path__item {
+	color: #000000;
+	margin-right: 20px;
+	font-weight: 700;
+	font-size: 24px;
+}
+.path__link {
+	color: #000000;
+}
+.path__item:first-child {
+	font-weight: 400;
+}
+
+.name-application__container {
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 140%;
+	color: #000000;
+}
+.appication-card__container {
+	border: 1px solid rgba(92, 92, 92, 0.22);
+	border-radius: 2px;
+	margin-bottom: 50px;
+}
+.application-card__name {
+	background: #5EB3D1;
+	padding: 20px;
+	font-weight: 700;
+}
+.application-card__items {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+.application-card__item-name {
+	color: #333333;
+	font-weight: 700;
+	margin-bottom: 10px;
+	white-space: nowrap;
+}
+.application-card__item {
+	width: 30%;
+	margin-bottom: 20px;
+}
+.application-card__item-input input {
+	width: 100%;
+	padding: 10px 5px;
+}
+.application-card__item-input {
+	display: flex;
+	justify-content: space-between;
+}
+.application-card__item-input div {
+	width: 49%;
+	text-align: center;
+	background: rgba(127, 141, 151, 0.75);
+	padding: 10px 5px;
+	cursor: pointer;
+}
+.application-card__item-input .active {
+	background: #5EB3D1;
+}
+.send-form__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+}
+.send-form__item {
+}
+.send-form__button {
+	border: none;
+	background: #747474;
+	color: #FFFFFF;
+	cursor: pointer;
+	padding: 14px 100px;
+	transition: .5s;
+	display: flex;
+}
+.send-form__button:hover {
+	transition: .5s;
+	background: #fff;
+	outline:1px solid #747474;
+	color: #747474;
+}
 /*page internal*/
 
 /*MEDIA*/
