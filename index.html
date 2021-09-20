@@ -52,11 +52,83 @@
 		</section>
 	</main>
 	</div>
+	<section class="registration">
+		<div class="registration__container">
+			<div class="registration__step">
+				<div class="registration__step-items">
+					<div class="registration__step-item">Шаг 1</div>
+					<div class="registration__step-item">Шаг 2</div>
+					<div class="registration__step-item">Шаг 3</div>
+					<div class="registration__step-item">Шаг 4</div>
+					<div class="registration__step-item">Шаг 5</div>
+				</div>
+			</div>
+			<div class="registration__window">
+				<div class="registration__window-elements">
+					<div class="registration__title">Акцепт на заключение Договора публичной оферты об оказании брокерских услуг</div>
+					<div class="registration__inputs">
+						<div class="registration__inputs-row">
+							<h4>Форма собственности</h4>
+							<input type="text">
+						</div>
+						<div class="registration__inputs-row">
+							<h4>ИИК (номер счета)</h4>
+							<input type="text">
+						</div>
+						<div class="registration__inputs-row">
+							<h4>Наименование</h4>
+							<input type="text">
+						</div>
+						<div class="registration__inputs-row">
+							<h4>Банк</h4>
+							<input type="text">
+						</div>
+						<div class="registration__inputs-row">
+							<h4>Электронный адрес</h4>
+							<input type="text">
+						</div>
+						<div class="registration__inputs-row">
+							<h4>БИК</h4>
+							<input type="text">
+						</div>
+						<div class="registration__inputs-row">
+							<h4>Юридический адрес</h4>
+							<input type="text">
+						</div>
+						<div class="registration__inputs-row">
+							<h4>ФИО первого руководителя</h4>
+							<input type="text">
+						</div>
+						<div class="registration__inputs-row">
+							<h4>Фактический адрес</h4>
+							<input type="text">
+						</div>
+						<div class="registration__inputs-row">
+							<h4>Контактный телефон</h4>
+							<input type="text">
+						</div>
+						<div class="registration__inputs-row">
+							<h4>БИН/ИИН</h4>
+							<input type="text">
+						</div>
+						<div class="registration__inputs-row">
+							<h4>Роль по умолчанию</h4>
+							<input type="text">
+						</div>
+						<div class="registration__button">
+							<button class="registration__button-next">Далее</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<section class="company">
 			<div class="company__background">
+				<span class="mouse"><a href="#down"><img src="images/mouse.svg" alt=""></a></span>
 				<div class="container">
 					<div class="company__container">
-						<div class="company__items">
+						<div class="company__items" id="down">
 							<div class="company__item">
 								<div class="company__item-title">
 									О компании
@@ -85,30 +157,38 @@
 							<span class="footer__top-text">Контакты Брокера для заключения договора брокерского обслуживания, получения прочей справочной информации:</span>
 						</div>
 						<div class="footer__top-table" >
-							<table class="footer__table">
-								<thead>
-									<tr>
-										<th>Брокер</th>
-										<th>БИН</th>
-										<th>Юридический адрес</th>
-										<th>ИИК</th>
-										<th>Банк</th>
-										<th>БИК</th>
-										<th>E-mail</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>ТОО "GKZ Trading"</td>
-										<td>210 340 033 773</td>
-										<td>РК, г. Темиртау, Мик. 7, дом 1А, кв. 23</td>
-										<td>KZ20914052203KZ004JP</td>
-										<td>Банке: АО «СБЕРБАНК»</td>
-										<td>SABRKZKA</td>
-										<td>1233trading@gmail.com</td>
-									</tr>
-								</tbody>
-							</table>
+							<div class="footer__table">
+								<div class="footer__table-items">
+									<div class="footer__table-item">
+										<div class="footer__item-head">Брокер</div>
+										<div class="footer__item-text">ТОО "GKZ Trading"</div>
+									</div>
+									<div class="footer__table-item">
+										<div class="footer__item-head">БИН</div>
+										<div class="footer__item-text">210 340 033 773</div>
+									</div>
+									<div class="footer__table-item">
+										<div class="footer__item-head">Юридический адрес</div>
+										<div class="footer__item-text">РК, г. Темиртау, Мик. 7, дом 1А, кв. 23</div>
+									</div>
+									<div class="footer__table-item">
+										<div class="footer__item-head">ИИК</div>
+										<div class="footer__item-text">KZ20914052203KZ004JP</div>
+									</div>
+									<div class="footer__table-item">
+										<div class="footer__item-head">Банк</div>
+										<div class="footer__item-text">Банк: АО «СБЕРБАНК»</div>
+									</div>
+									<div class="footer__table-item">
+										<div class="footer__item-head">БИК</div>
+										<div class="footer__item-text">SABRKZKA</div>
+									</div>
+									<div class="footer__table-item">
+										<div class="footer__item-head">E-mail</div>
+										<div class="footer__item-text">1233trading@gmail.com</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -129,7 +209,7 @@
 				</div>
 			</div>
 		</div>
-	</footer>		
+	</footer>
 <script src="scripts/script.js"></script>
 </body>
 </html>
